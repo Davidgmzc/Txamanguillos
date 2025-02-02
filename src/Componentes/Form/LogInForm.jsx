@@ -1,9 +1,13 @@
-import "./Formulario.css"
 import { useState } from "react"
+import '../../Estilos/logInForm.css'
 
+{/*
+  !user.length > 0 
+  ? <Formulario setUser={setUser}/>
+  : <Home user={user} setUser={setUser} />
+*/}
 
-
-export const Formulario = ({setUser}) => {
+export const LogInForm = ({setUser}) => {
 
   const [nombre, setNombre] = useState("")
   const [contraseña, setContraseña] = useState("")
